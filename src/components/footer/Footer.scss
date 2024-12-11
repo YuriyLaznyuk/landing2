@@ -1,0 +1,71 @@
+@use "../../styles/variables.scss";
+
+.footer-menu {
+  background: variables.$background-dark-blue;
+  padding-top: 100px;
+
+  &__wrapper {
+    border-top: 1px solid#2a407c;
+    padding: 68px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 10px;
+    }
+    p {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer-menu__item {
+      margin-right: 36px;
+      &:last-child {
+        margin-right: 0;
+      }
+      .footer-menu__link {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    a {
+      margin-right: 40px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+///media
+
+@media (max-width: 1200px) {
+  .footer-menu__wrapper {
+    padding: 58px 20px 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-menu__list {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-menu__wrapper {
+    flex-flow: column wrap;
+    gap: 35px;
+    align-items: center;
+  }
+}

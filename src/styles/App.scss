@@ -1,0 +1,32 @@
+@use "./variables";
+@use "./mixins";
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: variables.$light-gray;
+}
+
+.container {
+    @include mixins.min-max(320px, 100%);
+  }
+  
+  .wrap {
+    @include mixins.min-max(320px, 1180px);
+  }
+  
+  p,
+  a,
+  button {
+    color: variables.$gray;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  html,
+  body {
+    overflow-x: hidden;
+  }
