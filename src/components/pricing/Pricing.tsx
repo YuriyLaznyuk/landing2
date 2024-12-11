@@ -1,5 +1,6 @@
 import React from "react";
 import "./Pricing.scss";
+import Footer from "../footer/Footer";
 
 export default function Pricing(): React.JSX.Element {
   return (
@@ -45,6 +46,7 @@ export default function Pricing(): React.JSX.Element {
           </div>
         </div>
       </div>
+      <Footer/>
     </section>
   );
 }

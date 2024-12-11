@@ -4,7 +4,7 @@ import Features from "./components/features/Features";
 import RoadMap from "./components/road-map/RoadMap";
 import "./styles/App.scss";
 import Pricing from "./components/pricing/Pricing";
-import Footer from "./components/footer/Footer";
+// import Footer from "./components/footer/Footer";
 export default function App(): React.JSX.Element {
   return (
     <div className="container">
@@ -12,7 +12,7 @@ export default function App(): React.JSX.Element {
       <Features/>
       <RoadMap/>
       <Pricing/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }
